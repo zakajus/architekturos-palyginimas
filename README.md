@@ -6,7 +6,7 @@
 
 Dirbant dažnai nesu gerai organizuotas, taigi stengsiuosi išskirti skirtingus etapus ir failų kategorijas į skirtingus katalogus:
 
-- `resources` - Dėstytojo Sauliaus Gražulio užduoties reikalavimai, dalyko aprašai 
+- `description` - Dėstytojo Sauliaus Gražulio užduoties reikalavimai, dalyko aprašai 
 - `sources` - Naudoti šaltiniai - bus įtrauktą į bibliografiją
 - `wip` - mano rašomi juodraščiai, užrašai ir panašiai
 - `final` - formatuojamas galutinis failas, jei nuspręsiu perrašyti su LaTeX - su tai susiję failai
