@@ -1,0 +1,129 @@
+Compare two computer architectures
+==================================
+
+Choose from the pair list of computer architectures two architectures
+that were launched in the same year (and thus will share the same
+technological limitations, element base and probably architectural
+trends).
+
+Answer the following questions and perform the following tasks:
+
+1. Commit all your files to a version control system (Subversion, Git,
+Mercurial or RCS). When submitting your assignment, provide a single
+archive (.zip, .7z, .tgz, .tbz or .txz file with appropriate format)
+with all your text sources and cited literature (bibliography if the
+cited sources are large or proprietary). if you use LaTeX, provide
+both the source files and the generated PDF file, along with the
+generation commands. Your final text for evaluation must be a single
+PDF file. Group files into appropriate directories so that they are
+easy to find. Give reasonable, easy-to-recognise (not cryptic) names
+for you files. If special coding (e.g. MD5 hashes or UUIDs) are used
+for file names for technical reasons, explain that use in the README
+file.
+
+RAR files are *not* accepted!
+
+Use version control throughout the work. Commit and explain in the
+log message every step of you investigation. Write meaningful,
+accurate log message (full sentences with decent wording and
+punctuation). Your repository must be accessible during the grading –
+it must be public on some server visible on the internet (your private
+server, Gitlab, Github, Bitbucket, SourceForge) or the repository must
+be provided in the archive in a separate directory. All *steps* of
+your work must be committed, including *all* intermediate draft
+versions, not only the final one. The work where only the final
+version is provided may be rejected altogether.
+
+2. What was the elementary base of a computer/processor (relays,
+vacuum tubes (aka thermoionic valves), transistors, magnetic cores,
+integrated circuits (ICs) – were they hybrid, low scale integration,
+Large Scale Integration (LSI), Very Large Scale Integration (VLSI),
+modern microprocessors)? What where the physical characteristics of
+the equipment (weight, size, power consumption)?
+
+3. What type of architecture did both computers have? Were they
+accumulator based, register based, stack based, memory-to-memory or
+some other architectures?
+
+4. Were they zero-address, one-address, two-address, three-address or
+four address machines?
+
+5. What were the registers in both architectures? Did they have
+registers at all? Were they general purpose registers or specialised
+ones? How many registers did each architecture have? What were the
+widths of these registers?
+
+6. Were the flags used in the architectures? What flags were there?
+
+7. What was the data width (machine word) of each architecture?
+
+8. What was the memory layout of each system? Was address space
+continuous, or was it segmented, paged, subdivided into banks? What was
+the (effective) width of the address? What was the maximum possible
+amount of memory in each system? What was the typical amount of memory
+with which the system was used?
+
+9. Was virtual memory supported, and how? Was it paged or segmented?
+
+10. What was the ISA of each architecture? How many instructions did
+each architecture have? What were the classes of the instructions?
+What instructions formats did each architecture support? Provide
+examples of some 8-16 instructions. What instructions were similar in
+both architectures? Which instructions were different?
+
+11. What were the addressing modes supported by each architecture?
+Which modes were similar, and which were different?
+
+12. What were the I/O capabilities of each architecture?
+
+13. Were interrupts supported for each architecture? How was the
+interrupt support similar, and how was it different in both
+architectures?
+
+14. What data types did each architecture support on instruction
+level? Was fixed point or floating point supported by hardware and
+how? Where integers sign-magnitude, one's complement, two's
+complement? What other "exotic" data types did architecture support
+(decimal numbers, complex numbers, etc.)?
+
+15. What was the speed of each system? How did clock frequencies, clock
+cycles per instruction, instruction rates compare? Which system was
+faster?
+
+16. Did the architectures use cache memory? If yes, how much?
+
+17. What were the typical application areas of each architecture? How
+were they used? Describe briefly (on paragraph) one particular
+installation of each architecture.
+
+18. How much software was written for each discussed architecture, is
+it (still) available, what application domains did it target? What
+compilers and programming tools (debuggers, profilers, assemblers) did
+architectures have? What software libraries were available?
+
+19. (optional) are there emulators available for both architectures?
+If you find some, provide their URLs and/or publication metadata.
+
+20. Make sure you cite *all* relevant sources of information that you
+have used in your work. At least two sources must be among the cited
+ones: the description of the architecture that you are investigating
+and the description of the algorithm that you are implementing. The
+sources must be cited using Harvard reference style (University of
+Wolverhampton, 2022). Citations must be in the text and the full
+bibliography of the sources must be provided at the end of your
+report. Wikipedia (Wikipedia, 2023) are permitted of the articles are
+high quality, informative and to the point (most of them are). If
+ChatGPT or other Large Language Models are used, they MUST be cited as
+sources, with publicly available URL, access date and time, tool
+version and the full prompt.
+
+References:
+
+University of Wolverhampton (2022) Harvard referencing (Cite them
+right): the basics. 2nd edition. URL:
+https://www.wlv.ac.uk/lib/media/departments/lis/skills/study-guides/LS134-Harvard-Quick-Guide.pdf
+
+Wikipedia (2024) Wikipedia. URL:
+https://en.wikipedia.org/wiki/Wikipedia [accessed
+2024-11-04T09:16+02:00, permalink
+https://en.wikipedia.org/w/index.php?title=Wikipedia&oldid=1254652936]

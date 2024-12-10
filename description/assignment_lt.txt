@@ -1,0 +1,141 @@
+Palyginkite dvi kompiuterių architektūras
+===================================
+
+Iš kompiuterių architektūrų porų sąrašo pasirinkite dvi architektūras
+kurios buvo išleistos tais pačiais metais (taigi turės tokius pačius
+technologinius apribojimus, elementinę bazę ir tikriausiai
+architektūrines tendencijas).
+
+Atsakykite į šiuos klausimus ir atlikite šias užduotis:
+
+1. Įkelkite visus failus į versijų valdymo sistemą (Subversion, Git,
+Mercurial arba RCS). Pateikdami užduotį įkelkite vieną archyvą
+(atitinkamo formato .zip, .7z, .tgz, .tbz arba .txz failą) su visais
+tekstais ir naudota bibliografija. Jei naudojate LaTeX, pateikite ir
+išeities failus, ir surinktą PDF failą bei surinkimo komandas. Jūsų
+galutinis vertinimui skirtas tekstas turi būti vienas PDF
+failas. Saugykla turi būti skirta tik šiai vienai užduočiai.
+Sugrupuokite failus į atitinkamus katalogus (direktorijas), kad juos
+būtų lengva rasti. Suteikite prasmingus, lengvai atpažįstamus vardus
+Jūsų failus. Jei dėl techninių priežasčių naudojami specialūs kodai
+failų vardams (pvz., MD5 eilutės arba UUID), paaiškinkite, kaip ir
+kokiems tikslams jie naudojami README faile.
+
+RAR failai *nepriimami*!
+
+Viso darbo metu naudokite versijų valdymą. Įkelkite kaip atskirą
+reviziją ir paaiškinkite žurnalo pranešimuose (angl. log messages)
+kiekvieną tyrimo žingsnį. Rašykite prasmingus, tikslius žurnalo įrašus
+(pilnus sakinius su tinkama formuluote ir skyryba). Jūsų saugykla turi
+būti prieinama vertinimo metu – ji turi būti vieša kokiame nors
+internete matomame serveryje (tai gali būti Jūsų privatus serveris,
+„Gitlab“, „Github“, „Bitbucket“, „SourceForge“ serveriai) arba
+saugykla turi būti pateikta archyve atskirame kataloge. Turi matytis
+visi Jūsų darbo kūrimo žingsniai; turi būti pateikiami visi
+juodraščiai, nuo pradinės beveik tuščios versijos iki galutinio
+rezultato, o ne tik paskutinė versija. bet tarpinių rezultatų darbas
+gali būti nepriimtas visai.
+
+2. Kokia buvo elementinė kompiuterio/procesoriaus bazė (relės,
+vakuuminės lempos, tranzistoriai, magnetinės šerdys, integriniai
+grandynai (IC) – ar jie hibridiniai, mažo integracijos masto, Didelio
+integracijos masto (LSI), labai didelio integracijos masto (VLSI), ar
+tai buvo monokristaliniai šiuolaikiniai mikroprocesoriai)? Kokios buvo
+fizinės įrangos savybės (svoris, dydis, energijos suvartojimas)?
+
+3. Kokio tipo architektūrą turėjo abu kompiuteriai? Ar jie buvo
+akumuliatoriniai, registriniai, stekiniai (dėklo architektūros),
+atmintis-į-atmintį architektūros arba kokios nors kitos architektūros?
+
+4. Ar tai buvo beadresinės (stekinės), vieno adreso, dviejų adresų,
+trijų adresų ar keturios adresų mašinos?
+
+5. Kokie buvo registrai abiejose architektūrose? Ar šios architektūros
+iš viso turėjo registrus? Ar tai buvo bendrosios paskirties registrai,
+ar specializuoti registrai? Kiek registrų turėjo kiekviena
+architektūra?  Kokie buvo šių registrų duomenų pločiai? Kokia buvo
+specifinė registrų paskirtis?
+
+6. Ar požymių bitai buvo naudojami šiose architektūrose? Kokie
+požymiai buvo naudojami?
+
+7. Koks buvo kiekvienos architektūros duomenų plotis (mašininis žodis)?
+
+8. Koks buvo kiekvienos sistemos atminties išdėstymas? Ar adresų buvo
+erdvė ištisinė, ar ji buvo suskirstytas į segmentus, puslapius,
+atminties į bankus? Koks buvo (efektyvus) adreso plotis? Koks buvo
+maksimalus įmanomas atminties kiekis kiekvienoje sistemoje? Koks buvo
+tipiškas atminties kiekis, su kuria sistema buvo naudojama?
+
+9. Ar buvo palaikoma virtualioji atmintis ir kaip? Ar virtuali atmintis
+buvo realizuoti, naudojant puslapiavimą, segmentavimą, abu šiuos
+mechanizmus?
+
+10. Kokia buvo kiekvienos architektūros komandų sistema (ISA)? Kiek
+mašinos komandų turėjo kiekviena architektūra? Kokios buvo instrukcijų
+(komandų) klasės?  Kokius instrukcijų formatus palaikė kiekviena
+architektūra?  Pateikite 8–16 instrukcijų pavyzdžiai. Kokios komandos
+buvo panašios abi architektūros? Kurios komandos skyrėsi?
+
+11. Kokius adresavimo būdus palaikė kiekviena architektūra?
+Kurie režimai buvo panašūs, o kurie skyrėsi?
+
+12. Kokios buvo kiekvienos architektūros I/O galimybės?
+
+13. Ar buvo palaikomi pertraukimai? Kuo pertraukimų mechanizmai buvo
+panašūs, kuo jie skyrėsi abiejose architektūrose?
+
+14. Kokius duomenų tipus palaikė kiekviena architektūra aparatūros
+lygyje? Ar buvo palaikoma fiksuoto kablelio, slankiojo kablelio
+aritmetika? Ar sveikieji skaičiai buvo koduojami kaip ženklas-dydis,
+kaip vieneto papildinys (atvirkštinis kodas), dvejeto papildyti
+(papildomas kodas)? Kokius kitus „egzotiškus“ duomenų tipus palaikė
+architektūra (pvz. dešimtainius skaičius, kompleksinius skaičius ir
+kt.)?
+
+15. Kokia buvo kiekvienos sistemos greitaveika? Kokie buvo taktinių
+generatorių dažniai, vidutinis/mažiausias/didžiausias ciklų skaičius,
+reikalingas kiekvienai komandai įvykdyti, vidutinė sistemos
+greitaveika? Kuri sistema buvo našesnė? Koks buv kainos ir našumo
+santykis?
+
+16. Ar architektūros naudojo spartinančią atmintį? Jei taip, kokio
+dydžio?
+
+17. Kokios buvo tipinės kiekvienos architektūros taikymo sritys? Kaip
+šios architektūros buvo naudojamos? Trumpai apibūdinkite (vienoje
+pastraipoje) vieną konkretų kiekvienos architektūros panaudojimo
+pavyzdį.
+
+18. Kiek programinės įrangos buvo parašyta kiekvienai aptariamai
+architektūrai, ar ji (vis dar) prieinama, kur ji buvo naudojama? Kokie
+buvo prieinami kompiliatoriai ir programavimo įrankiai (derintojai,
+profiliuotojai, surinkėjai)? Kokios programinės įrangos bibliotekos
+buvo prieinamos?
+
+19. (neprivaloma) ar yra emuliatorių abiem architektūroms?  Jei tokių
+rasite, pateikite jų URL ir (arba) leidinio metaduomenis.
+
+20. Pacituokite *visus* naudotus ir reikalingus šaltinius iš kurių
+naudojote informaciją šiame darbe. Mažų mažiausia turite pacituoti du
+šaltinius: architektūros aprašymą ir algoritmo aprašymą. Cituoti
+reikia naudojant Harvardo stilių (University of Wolverhampton,
+2022). Jūsų tekste turi būti pateiktos nuorodos į šaltinius, teksto
+pabaigoje turi būti šaltinių sąrašas su pilna bibliografija. Galima
+cituoti Vikipedijos straipsnius (Wikipedia, 2024), jei jie yra
+kokybiški (dauguma yra), informatyvūs ir reikalingi Jūsų darbui. Jei
+naudojate ChatGPT ar kitus Didelius kalbos modelius, juos *būtina*
+pacituoti kaip šaltinius, nurodant viešą URL, panaudojimo datą ir
+laiką, įrankio versiją ir Jūsų naudotą pradinį klausimą
+(angl. prompt).
+
+Nuorodos:
+
+University of Wolverhampton (2022) Harvard referencing (Cite them
+right): the basics. 2nd edition. URL:
+https://www.wlv.ac.uk/lib/media/departments/lis/skills/study-guides/LS134-Harvard-Quick-Guide.pdf
+
+Wikipedia (2024) Wikipedia. URL:
+https://en.wikipedia.org/wiki/Wikipedia [accessed
+2024-11-04T09:16+02:00, permalink
+https://en.wikipedia.org/w/index.php?title=Wikipedia&oldid=1254652936]
