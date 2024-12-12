@@ -36,6 +36,7 @@ registers at all? Were they general purpose registers or specialised
 ones? How many registers did each architecture have? What were the
 widths of these registers?
 
+
 Zilog: (wikipedia)
 16 16-bit registers R0-R15
 can be concatenated inot 8*32bit registers RR0/RR2/../RR14
@@ -46,9 +47,6 @@ R0-14 general purpose
 R15 designated as stack pointer
 
 Status register - (C)arry, (Z)ero, (S)ign, (P/V) parity / overflow, (D)ecimal adjust, (H)alf carry (manual, 2-7)
-
-LITTLE endian
-
 
 Motorola: (wikipedia)
 8 32bit general purpose D0-D7
@@ -66,13 +64,28 @@ Status register - (C)arry, (Z)ero, (S)ign, (P/V) parity / overflow, (D)ecimal ad
 
 
 
-- [ ] What was the data width (machine word) of each architecture?
+- [x] What was the data width (machine word) of each architecture?
+
+Wikipedia:
+Zilog, Motorola- 16bit
 
 - [ ] What was the memory layout of each system? Was address space
 continuous, or was it segmented, paged, subdivided into banks? What was
 the (effective) width of the address? What was the maximum possible
 amount of memory in each system? What was the typical amount of memory
 with which the system was used?
+
+(wikipedia): 
+zilog little endian, motorola big endian
+
+
+motorola:
+continuous usegmented memory space, 
+24 bit addressing --> 2^24 = 16MB memory
+
+
+
+
 
 - [ ] Was virtual memory supported, and how? Was it paged or segmented?
 
@@ -111,6 +124,10 @@ installation of each architecture.
 it (still) available, what application domains did it target? What
 compilers and programming tools (debuggers, profilers, assemblers) did
 architectures have? What software libraries were available?
+
+(KRANENBORG)!!!!
+
+
 
 - [ ] (optional) are there emulators available for both architectures?
 If you find some, provide their URLs and/or publication metadata.
