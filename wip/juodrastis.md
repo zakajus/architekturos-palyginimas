@@ -11,14 +11,14 @@ for you files. If special coding (e.g. MD5 hashes or UUIDs) are used
 for file names for technical reasons, explain that use in the README
 file. RAR files are *not* accepted!
 
-- [ ] What was the elementary base of a computer/processor (relays,
+- [x] What was the elementary base of a computer/processor (relays,
 vacuum tubes (aka thermoionic valves), transistors, magnetic cores,
 integrated circuits (ICs) – were they hybrid, low scale integration,
 Large Scale Integration (LSI), Very Large Scale Integration (VLSI),
 modern microprocessors)? What where the physical characteristics of
 the equipment (weight, size, power consumption)?
 
-- [ ] What type of architecture did both computers have? Were they
+- [x] What type of architecture did both computers have? Were they
 accumulator based, register based, stack based, memory-to-memory or
 some other architectures?
 
@@ -31,7 +31,7 @@ Mot - 2 (manual, 2-11)
 
 
 
-- [x] What were the registers in both architectures? Did they have
+- [] What were the registers in both architectures? Did they have
 registers at all? Were they general purpose registers or specialised
 ones? How many registers did each architecture have? What were the
 widths of these registers?

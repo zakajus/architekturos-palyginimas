@@ -6,6 +6,6 @@ As their elementary base, both of these CPUs used large-scale integrated circuit
 
 Although both of them were register based architectures, their approaches differered greatly. The Z8000 featured sixteen 16-bit registers labeled RO through R15, with R15 being the only non-general purpose register, having been designated as the stack pointer. They stood out since all of them could be freely concatenated into eight 32 bit (RR0/RR2/.../RR14) or into four 64-bit (RQ0/RQ4/RQ/8/RQ12) registers. Furthermore, registers R0-R7 were subdivided into sixteen 8 bit registers (Wikipedia), reminiscent of Intel's 8086 (AX/BX/CX/DX) register layout released just a year earlier (Intel manual). There was also a dedicated 16-bit status register for carry, zero, sign, partity / overflow, decimal adjust, and half-carry flags. 
 
-On the other hand, the 68000
+On the other hand, the 68000 was comprised of eight 32-bit general purpose registers D0-D7, eight 32-bit adress registers A0-A7, and a 16-bit status register, supporting carry, overflow, zero, negative, and extend flags. Additionally, its status registry's "user" lower byte allowed for unprivilleged modification, while the upper "supervisor" byte did require escalated privellege. Despite both of these CPUs having 16-bit data busses, Motorola coined the 68000 as a 16/32-bit processor due to its registry size.
 
-
+Another important difference is in the memory map - the 68000 featured a 24-bit address bus and unsegmented memory, while the Z8000 opted for segmented memory and had a 23-bit wide address bus. In addition to supporting 16MB as supposed to 8MB of memory, the ease of programming using the flat memory space of the 68000 was a key reason it outperformed its Zilog counterpart commercially.
