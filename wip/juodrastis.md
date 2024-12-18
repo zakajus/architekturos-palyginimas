@@ -31,7 +31,7 @@ Mot - 2 (manual, 2-11)
 
 
 
-- [] What were the registers in both architectures? Did they have
+- [x] What were the registers in both architectures? Did they have
 registers at all? Were they general purpose registers or specialised
 ones? How many registers did each architecture have? What were the
 widths of these registers?
@@ -69,7 +69,7 @@ Status register - (C)arry, (Z)ero, (S)ign, (P/V) parity / overflow, (D)ecimal ad
 Wikipedia:
 Zilog, Motorola- 16bit
 
-- [ ] What was the memory layout of each system? Was address space
+- [x] What was the memory layout of each system? Was address space
 continuous, or was it segmented, paged, subdivided into banks? What was
 the (effective) width of the address? What was the maximum possible
 amount of memory in each system? What was the typical amount of memory
