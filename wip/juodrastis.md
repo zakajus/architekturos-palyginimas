@@ -115,7 +115,7 @@ complement? What other "exotic" data types did architecture support
 cycles per instruction, instruction rates compare? Which system was
 faster?
 
-- [ ] Did the architectures use cache memory? If yes, how much?
+- [x] Did the architectures use cache memory? If yes, how much?
 
 - [ ] What were the typical application areas of each architecture? How
 were they used? Describe briefly (on paragraph) one particular
@@ -134,7 +134,7 @@ architectures have? What software libraries were available?
 If you find some, provide their URLs and/or publication metadata.
 
 - [ ] Make sure you cite *all* relevant sources of information that you
-have used in your work. At least two sources must be among the cited
+have used in your work. At least two sources must be among thecited
 ones: the description of the architecture that you are investigating
 and the description of the algorithm that you are implementing. The
 sources must be cited using Harvard reference style (University of
