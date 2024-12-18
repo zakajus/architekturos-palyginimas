@@ -87,7 +87,8 @@ continuous usegmented memory space,
 
 
 
-- [ ] Was virtual memory supported, and how? Was it paged or segmented?
+- [x] Was virtual memory supported, and how? Was it paged or segmented?
+
 
 - [ ] What was the ISA of each architecture? How many instructions did
 each architecture have? What were the classes of the instructions?
