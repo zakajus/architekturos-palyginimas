@@ -21,34 +21,12 @@ Both of them were classified as CISC (complex instruction set computers), since 
 
 # Data types
 
-The following basic data types were supported by both architectures: bits (addresable in bytes or words), digits (4 bytes/nibble), bytes, words (16 bits), long words (32 bits). In addition, the Z8000 also offered the quadruple word (64 bits), as well as made a distinction between segmented and unsegmented types - allowing to explicitly have unsegmented variables up to word length. (reference manuals). Neither of them natively supported floating-point numbers, however did allow for decimal representation using 4-bit BCDs (binary coded decimals). Notably, BCD arithmetic was supported only by the 68000 and had to be manually implemented on the Z8000. Furthermore, it (manual) and the 68000 both represented integers using two's complement. 
+The following basic data types were supported by both architectures: bits (addresable in bytes or words), digits (4 bytes/nibble), bytes, words (16 bits), long words (32 bits). In addition, the Z8000 also offered the quadruple word (64 bits), as well as made a distinction between segmented and unsegmented types - allowing to explicitly have unsegmented variables up to word length. (reference manuals). Neither of them natively supported floating-point numbers, however did allow for decimal representation using 4-bit BCDs (binary coded decimals). Notably, BCD arithmetic was implemented only in the 68000 and had to be manually written on the Z8000. Furthermore, it (manual) and the 68000 both represented integers using two's complement (http://wpage.unina.it/rcanonic/didattica/ce1/docs/68000.pdf). 
+
+# Addressing modes
+
+Despite that certain names slightly differed in the documentation published by each manufacturer, the two processors had a number addressing modes that were functionally equivalent: immediate, register direct, register indirect, relative address, and base address. The Motorola additionally offered a quick immediate mode (wikipedia) for values stored in opcode and the Zilog had an index mode (manual).
 
 
+# Interrupts and I/O
 
-bits (are addressable in bytes or words)
-bit fields
-digit 
-byte
-word (16b)
-long word (32b)
-byte strings
-word strings
-BCD digits (2 x 4bit digits)
-
-
-arrays
-stacks
-
-
-Motorola:
-
-```asm
-LOOP: 
-    LDB RHO, @RR2
-    TESTB RHO
-        JR Z ENDLP
-    
-
-```
-
-\end{document}
