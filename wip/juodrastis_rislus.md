@@ -13,7 +13,7 @@ As their elementary base, both of these CPUs used large-scale integrated circuit
 
 Although both of them were register based architectures, their approaches differered greatly. The Z8000 featured sixteen 16-bit registers labeled RO through R15, with R15 being the only non-general purpose register, having been designated as the stack pointer. They stood out since all of them could be freely concatenated into eight 32 bit (RR0/RR2/.../RR14) or into four 64-bit (RQ0/RQ4/RQ/8/RQ12) registers. Furthermore, registers R0-R7 were subdivided into sixteen 8 bit registers (Wikipedia), reminiscent of Intel's 8086 (AX/BX/CX/DX) register layout released just a year earlier (Intel manual). There was also a dedicated 16-bit status register for carry, zero, sign, partity / overflow, decimal adjust, and half-carry flags.
 
-On the other hand, the 68000 was comprised of eight 32-bit general purpose registers D0-D7, eight 32-bit adress registers A0-A7, and a 16-bit status register, supporting carry, overflow, zero, negative, and extend flags. Additionally, its status registry's "user" lower byte allowed for unprivilleged modification, while the upper "supervisor" byte did require escalated privellege. Despite both of these CPUs having 16-bit data busses, Motorola coined the 68000 as a 16/32-bit processor due to its registry size. (user manuals)
+On the other hand, the 68000 was comprised of eight 32-bit general purpose registers D0-D7, eight 32-bit adress registers A0-A7, and a 16-bit status register, supporting carry, overflow, zero, negative, and extend flags. Additionally, its status registry's "user" lower byte allowed for unprivilleged modification, while the upper "supervisor" byte did require privellege. Despite both of these CPUs having 16-bit data busses, Motorola coined the 68000 as a 16/32-bit processor due to its registry size. (user manuals)
 
 Another important difference is in the memory map - the 68000 featured a 24-bit address bus and unsegmented memory, while the Z8000 opted for segmented memory and had a 23-bit wide address bus. Despite the Motorola and Zilog supporting up to 16MB and 8MB of memory respectively, in practice, systems came with far less memory. For example, the 68000-equipped Macintosh 128K (https://en.wikipedia.org/wiki/Macintosh_128K/512K_technical_details) or the Olivetti M20 featuring the Z8000 (https://en.wikipedia.org/wiki/Olivetti_M20) by default came with 128 kilobytes of memory. Another distinction between them was the fact the Motorola chip was big-endian, while the Zilog was little-endian (Wikipedias). However, these two CPUs did have in common the facts that they did not have support for virtual or cache memory, which were only introduced in later generation chips of their families, such as the 68010 or the Z8003 and Z8004 (manuals).
 
@@ -21,7 +21,12 @@ Both of them were classified as CISC (complex instruction set computers), since 
 
 # Data types
 
+The following basic data types were supported by both architectures: bits (addresable in bytes or words), digits (4 bytes/nibble), bytes, words (16 bits), long words (32 bits). In addition, the Z8000 also offered the quadruple word (64 bits), as well as made a distinction between segmented and unsegmented types - allowing to explicitly have unsegmented variables up to word length. (reference manuals). Neither of them natively supported floating-point numbers, however did allow for decimal representation using 4-bit BCDs (binary coded decimals). Notably, BCD arithmetic was supported only by the 68000 and had to be manually implemented on the Z8000. Furthermore, it (manual) and the 68000 both represented integers using two's complement. 
+
+
+
 bits (are addressable in bytes or words)
+bit fields
 digit 
 byte
 word (16b)
