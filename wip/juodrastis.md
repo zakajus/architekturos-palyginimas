@@ -90,13 +90,13 @@ continuous usegmented memory space,
 - [x] Was virtual memory supported, and how? Was it paged or segmented?
 
 
-- [ ] What was the ISA of each architecture? How many instructions did
+- [x] What was the ISA of each architecture? How many instructions did
 each architecture have? What were the classes of the instructions?
 What instructions formats did each architecture support? Provide
 examples of some 8-16 instructions. What instructions were similar in
 both architectures? Which instructions were different?
 
-- [ ] What were the addressing modes supported by each architecture?
+- [x] What were the addressing modes supported by each architecture?
 Which modes were similar, and which were different?
 
 - [ ] What were the I/O capabilities of each architecture?
@@ -105,7 +105,7 @@ Which modes were similar, and which were different?
 interrupt support similar, and how was it different in both
 architectures?
 
-- [ ] What data types did each architecture support on instruction
+- [x] What data types did each architecture support on instruction
 level? Was fixed point or floating point supported by hardware and
 how? Where integers sign-magnitude, one's complement, two's
 complement? What other "exotic" data types did architecture support

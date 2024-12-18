@@ -23,9 +23,15 @@ Both of them were classified as CISC (complex instruction set computers), since 
 
 The following basic data types were supported by both architectures: bits (addresable in bytes or words), digits (4 bytes/nibble), bytes, words (16 bits), long words (32 bits). In addition, the Z8000 also offered the quadruple word (64 bits), as well as made a distinction between segmented and unsegmented types - allowing to explicitly have unsegmented variables up to word length. (reference manuals). Neither of them natively supported floating-point numbers, however did allow for decimal representation using 4-bit BCDs (binary coded decimals). Notably, BCD arithmetic was implemented only in the 68000 and had to be manually written on the Z8000. Furthermore, it (manual) and the 68000 both represented integers using two's complement (http://wpage.unina.it/rcanonic/didattica/ce1/docs/68000.pdf). 
 
-# Addressing modes
+# Addressing modes and instruction set
 
-Despite that certain names slightly differed in the documentation published by each manufacturer, the two processors had a number addressing modes that were functionally equivalent: immediate, register direct, register indirect, relative address, and base address. The Motorola additionally offered a quick immediate mode (wikipedia) for values stored in opcode and the Zilog had an index mode (manual).
+Despite that certain names slightly differed in the documentation published by each manufacturer, the two processors had a number addressing modes that were functionally equivalent: immediate, register direct, register indirect, relative address, and base address. The Motorola additionally offered a quick immediate mode (wikipedia) for values stored in opcode, gothe Zilog had an index mode (manual).
+
+The instruction format that the Z8000 used varied based on the instruction, however a few things were constant: the first byte would always describe the opcode, bits fourteen to fourteen - the addressing mode, and bite 8 was reserved for whether the instruction was for byte or word data type (https://www.crockford.com/plz/z8000asm.pdf). The 68000 used a different format, where the first word of the instruction specified the operation, address mode, and instruction length. Word two-through-four were so-called "full extension" words and could provide operand specifiers, the source, destination, etc (motorola reference).
+
+The two processors had different instruction sets. While both shared integer arithmetic, bit manipulation, logical, transfer of control, bit shifting, I/O, certain ones like decimal arithmetic on the 68000 (NBCD, SBCD...), or block transfer (CPD, LDD...) and string manipulation (CPSI, CPSD...) on the Z8000 were unique. Although different addressing modes, many instructions had differnt options for operating in different modes, the processors did share a number of common and identical instructions. For example, the usual integer arithmetic ones: ADD, CLR, NEG, etc. . There are also a number of instructions that have different mnemonics, such as CP vs CMP, or simply had different names, e.g. Motorola's logical NOT being COM on the Z8000.
+
+
 
 
 # Interrupts and I/O
